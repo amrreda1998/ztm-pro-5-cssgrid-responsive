@@ -1,0 +1,199 @@
+
+body{
+    margin: auto 0;
+}
+
+/* .container{
+    display: grid;
+    grid-template-rows: 20% 100% 200% 10%;
+} */
+.zone {
+    padding-right: 10px;
+    padding-left: 10px;
+    /* margin:40px 60px; */
+    cursor:pointer;
+    /* display:block; */
+    color:#FFF;
+    font-size: 1.5em;
+    /* border-radius:4px; */
+    border:1px solid #bbb;
+    /* transition: all 0.3s linear; */
+    /* width: 100%; */
+}
+
+/* .zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+} */
+
+/*https://paulund.co.uk/how-to-create-shiny-css-buttons*/
+/***********************************************************************
+ *  Green Background NAV BAR
+ **********************************************************************/
+
+.nav-bar{
+    background: #360eba; /* Old browsers */
+    background: -moz-linear-gradient(top, #360eba 0%, #4b24c8 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#360eba), color-stop(100%,#4b24c8)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #360eba 0%,#4b24c8 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #360eba 0%,#4b24c8 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #360eba 0%,#4b24c8 100%); /* IE10+ */
+    background: linear-gradient(top, #360eba 0%,#4b24c8 100%); /* W3C */
+    
+}
+
+.nav-items{
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    
+    
+}
+.nav-items li {
+    padding: 10px;
+}
+.nav-items .push {
+    margin-left: auto;
+    padding-right: 30px;
+
+}
+
+.nav-items li:hover {
+    color: rgb(255, 0, 234);
+    transform: scale(1.1);
+
+}
+
+.nav-items .push:hover {
+    /* padding-right: 5px; */
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+ }
+
+
+
+
+
+/***********************************************************************
+ *  Red Background / cover image and outline 
+ **********************************************************************/
+ .cover-image {
+    background: url(img/undraw.png) no-repeat center center ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: black;
+    height: 700px;
+    padding: 20px; 
+
+
+}
+.cover-image .buffer{
+    height: 20%;
+}
+
+.cover-image h1{
+    text-shadow: 3px 3px 0px #F2A063;
+    text-align: center;
+    /* font-family: monospace; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* animation: backInDown; */
+   
+}
+
+:root {
+    --text: #001aff; /* Blue */
+    --shadow: #E485F8; /* Pink */
+  }
+  
+.cover-image h1 {
+    color: var(--text);
+    text-shadow: 6px 6px var(--shadow);
+  }
+
+
+
+
+/* .cover-image img{
+    width: 100%;
+    height: 100%;
+
+} */
+
+
+/***********************************************************************
+ *  Grid gallary
+ **********************************************************************/
+
+ .gallary-grid{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-template-rows: repeat(auto-fill, minmax(300px,1fr));
+    background-color:darkgray;
+    color: black;
+    
+ }
+.gallary-grid img{
+    width: 70%;
+    height: 70%;
+    margin-top: 50px;
+    justify-self: center;
+    transition: 500ms;
+}
+.gallary-grid img:hover{
+    /* animation: bounce;  */
+    /* animation-duration: 1s;  */
+    border: 3px solid #360eba;
+    transform: scale(1.1);
+}
+
+
+.gallary-grid .box{
+    /* padding: 130px; */
+    /* margin: 30px; */
+}
+
+
+
+
+
+/***********************************************************************
+ *  Yellow Background //footer
+ **********************************************************************/
+.footer{
+    background: #360eba; /* Old browsers */
+    background: -moz-linear-gradient(top, #360eba 0%, #4b24c8 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#360eba), color-stop(100%,#4b24c8)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #360eba 0%,#4b24c8 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #360eba 0%,#4b24c8 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #360eba 0%,#4b24c8 100%); /* IE10+ */
+    background: linear-gradient(top, #360eba 0%,#4b24c8 100%); /* W3C */
+    
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
+}
+.footer p:hover{
+        color: rgb(255, 0, 234);
+        transform: scale(1.3);
+}
+
+/* media query to fix screen < 600 px problems  */
+
+@media only screen and (max-width: 500px) {
+    .zone{
+        font-size : 1.3em;
+    }
+    
+}
+
+
+
